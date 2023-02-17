@@ -2,4 +2,4 @@
 
 ## Preview.
 
-<img class="screen_application" src="https://github.com/mightyK1ngRichard/Instagram/Screens/preview.png" width="1000">
+<img class="screen_application" src="https://github.com/mightyK1ngRichard/Instagram/blob/main/Screens/preview.png" width="1000">
