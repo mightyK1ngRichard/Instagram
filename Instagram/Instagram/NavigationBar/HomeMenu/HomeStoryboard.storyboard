@@ -5,11 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Instagram-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="MainViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,43 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mFF-qM-aNc">
-                                <rect key="frame" x="0.0" y="103" width="393" height="98"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8xg-ck-YWs">
+                                <rect key="frame" x="0.0" y="103" width="393" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="mFF-qM-aNc" secondAttribute="height" multiplier="393:98" id="HTG-dN-xs1"/>
+                                    <constraint firstAttribute="height" constant="150" id="B3T-r9-C8H"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="ljD-tR-Tz6">
-                                    <size key="itemSize" width="100" height="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="3" minimumInteritemSpacing="3" id="B4C-9z-N1c">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="150" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" id="2Z6-y7-QG8">
-                                        <rect key="frame" x="8" y="8" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2rE-ql-EZ1">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="100" height="100"/>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mFF-qM-aNc" secondAttribute="trailing" id="0Aw-Zg-NpU"/>
-                            <constraint firstItem="mFF-qM-aNc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="LpF-aj-AxS"/>
-                            <constraint firstItem="mFF-qM-aNc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="WrP-CN-MJ2"/>
+                            <constraint firstItem="8xg-ck-YWs" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="3HG-zd-fZW"/>
+                            <constraint firstItem="8xg-ck-YWs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7ZZ-Em-moB"/>
+                            <constraint firstItem="8xg-ck-YWs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8SJ-LJ-2BB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="O7h-k4-aO2"/>
+                    <navigationItem key="navigationItem" title="Instagram" id="O7h-k4-aO2">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="camera" id="JHn-Mn-GCm">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="reply" id="a6o-CT-LyN">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView" destination="mFF-qM-aNc" id="8eM-P2-uUd"/>
+                        <outlet property="collectionView" destination="8xg-ck-YWs" id="WeY-z2-JGM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,7 +60,7 @@
         <scene sceneID="SeP-mI-2Jd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fO8-4N-uvl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="home @1" id="n9I-qa-pLN"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="n9I-qa-pLN"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fsb-cP-A4w">
@@ -82,7 +78,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home @1" width="32" height="32"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

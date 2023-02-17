@@ -32,27 +32,14 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: idCell, for: indexPath) as! NewsCollectionViewCell
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .vertical
-        }
-        cell.userNameLabel.text = users[indexPath.row].surname
-        
-        if let imageURLString = users[indexPath.row].avatar {
-            guard let imageURL = URL(string: imageURLString) else {
-                cell.avatarUser.image = UIImage(named: "avatar_default")
-                return cell
-            }
-            DispatchQueue.main.async {
-                
-                let imageData = try! Data(contentsOf: imageURL)
-                cell.avatarUser.image = UIImage(data: imageData)
-            }
-            
-        } else {
-            cell.avatarUser.image = UIImage(named: "avatar_default")
-        }
-        
+        cell.setupInfo(with: users[indexPath.row])
         return cell
     }
     
+}
+
+extension MainViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 108, height: 110)
+    }
 }

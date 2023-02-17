@@ -21,6 +21,8 @@
                     <connections>
                         <segue destination="qRV-fs-W3m" kind="relationship" relationship="viewControllers" id="TDg-lS-HOE"/>
                         <segue destination="qVU-0E-CLc" kind="relationship" relationship="viewControllers" id="NjZ-3k-IsR"/>
+                        <segue destination="GGR-Mp-hAx" kind="relationship" relationship="viewControllers" id="G9G-ca-y8A"/>
+                        <segue destination="mVq-sq-Go0" kind="relationship" relationship="viewControllers" id="LSu-ar-y9m"/>
                         <segue destination="4Z3-Wq-eGU" kind="relationship" relationship="viewControllers" id="Mcs-6R-JOa"/>
                     </connections>
                 </tabBarController>
@@ -32,7 +34,7 @@
         <scene sceneID="tqn-JO-TS9">
             <objects>
                 <viewControllerPlaceholder storyboardName="HomeStoryboard" id="qRV-fs-W3m" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="1om-VN-gSE"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="1om-VN-gSE"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5O0-i2-h4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,11 +44,11 @@
         <scene sceneID="ipc-Dj-2R8">
             <objects>
                 <viewControllerPlaceholder storyboardName="SearchStoryboard" id="qVU-0E-CLc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="t4Y-D3-udo"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="magnifyingglass" catalog="system" id="t4Y-D3-udo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ULD-Nt-OH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-995" y="125"/>
+            <point key="canvasLocation" x="-1245" y="96"/>
         </scene>
         <!--ProfileStoryboard-->
         <scene sceneID="Xsa-6f-y0t">
@@ -56,7 +58,31 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yzk-Zs-Tcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-530" y="97"/>
+            <point key="canvasLocation" x="-730" y="96"/>
+        </scene>
+        <!--LikeStoryboard-->
+        <scene sceneID="73p-5t-R9U">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LikeStoryboard" id="mVq-sq-Go0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="G90-Tu-Fit"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rhf-uQ-H9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="96"/>
+        </scene>
+        <!--PlusStoryboard-->
+        <scene sceneID="6Ko-GB-fXc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlusStoryboard" id="GGR-Mp-hAx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Ue9-oD-LEd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5A6-FZ-KeE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-995" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+    </resources>
 </document>

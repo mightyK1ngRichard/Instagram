@@ -26,9 +26,9 @@ class User {
 }
 
 var users: [User] = [
-    User(surname: "Dima", avatar: "https://sun1.userapi.com/sun1-54/s/v1/ig2/50bsVETBKibM14SvXlw7dcFfyAxEm_2DLnSnnxJeCP_U7BDqnx1t7UoRwWrogxZCyI2USXP5NHdJXsJtwMKMUOmo.jpg?size=640x640&quality=95&type=album"),
+    User(surname: "Dmitriy", avatar: "https://sun1.userapi.com/sun1-54/s/v1/ig2/50bsVETBKibM14SvXlw7dcFfyAxEm_2DLnSnnxJeCP_U7BDqnx1t7UoRwWrogxZCyI2USXP5NHdJXsJtwMKMUOmo.jpg?size=640x640&quality=95&type=album"),
     
-    User(surname: "Pig_Boss", avatar: "https://sun9-west.userapi.com/sun9-50/s/v1/ig2/H8KaoVlGfsC5Uzb15g39J6X6KxXCBszeygXnxpHXlbRK0DYXAunGPkkRbBE_nnXXZsX_azzg1vJ3LeC8eYUilwvs.jpg?size=1266x1688&quality=95&type=album"),
+    User(surname: "Nicolay", avatar: "https://sun9-west.userapi.com/sun9-50/s/v1/ig2/H8KaoVlGfsC5Uzb15g39J6X6KxXCBszeygXnxpHXlbRK0DYXAunGPkkRbBE_nnXXZsX_azzg1vJ3LeC8eYUilwvs.jpg?size=1266x1688&quality=95&type=album"),
     
     User(surname: "Yaroslav", avatar: "https://sun9-west.userapi.com/sun9-69/s/v1/ig2/RbeVGdFQUmAfJNTT1EgyaY_WXzquyRTpBYBT7QtLHbLWcXaYB6QP3R561YQVzY_voqtSd8HYSWtub8LCbL5Ezxn4.jpg?size=2154x2160&quality=96&type=album"),
     
