@@ -55,6 +55,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA33219299F8CDD002B204C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CE23633299EC61900D20C8D /* Main.storyboard */,
+				2CE23636299EC61900D20C8D /* Assets.xcassets */,
+				2CE23638299EC61900D20C8D /* LaunchScreen.storyboard */,
+				2CE2363B299EC61900D20C8D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2CA3321A299F8D0C002B204C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2CE2362D299EC61900D20C8D /* AppDelegate.swift */,
+				2CE2362F299EC61900D20C8D /* SceneDelegate.swift */,
+				2CE23631299EC61900D20C8D /* ViewController.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		2CE23621299EC61900D20C8D = {
 			isa = PBXGroup;
 			children = (
@@ -74,17 +95,12 @@
 		2CE2362C299EC61900D20C8D /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				2CA3321A299F8D0C002B204C /* Application */,
+				2CA33219299F8CDD002B204C /* Resources */,
 				2CEAEE99299ED808006EB416 /* Users */,
 				2CEAEE92299ED3FB006EB416 /* Profile */,
 				2CEAEE8B299ED12B006EB416 /* Search */,
 				2CEAEE84299ED06E006EB416 /* HomeMenu */,
-				2CE2362D299EC61900D20C8D /* AppDelegate.swift */,
-				2CE2362F299EC61900D20C8D /* SceneDelegate.swift */,
-				2CE23631299EC61900D20C8D /* ViewController.swift */,
-				2CE23633299EC61900D20C8D /* Main.storyboard */,
-				2CE23636299EC61900D20C8D /* Assets.xcassets */,
-				2CE23638299EC61900D20C8D /* LaunchScreen.storyboard */,
-				2CE2363B299EC61900D20C8D /* Info.plist */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
